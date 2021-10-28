@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+  <title>Binaural Beats</title>
+</head>
+
+<body>
+
+
+  <div class="main">
+    <h1>-Binaural Beats-</h1>
+    <div class="volume-box">
+      <label for="volume">Volume</label>
+      <img id="volumeIcon" src="assets/volume-1.svg" alt="volume">
+      <input type="range" name="volume" id="volume" step="0.01" min="0" max="1">
+    </div>
+
+    <div class="channels">
+
+      <label for="leftChannel" id="leftLabel">Left Channel: </label>
+      <input type="range" name="left" id="leftChannel" step="1" min="20" max="200">
+
+      <label for="rightChannel" id="rightLabel">Right Channel: </label>
+      <input type="range" name="right" id="rightChannel" step="1" min="20" max="200">
+
+    </div>
+    <button class="btn">Play</button>
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
