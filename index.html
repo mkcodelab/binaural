@@ -26,14 +26,31 @@
     <div class="channels">
 
       <label for="leftChannel" id="leftLabel">Left Channel: </label>
-      <input type="range" name="left" id="leftChannel" step="1" min="20" max="200">
+      <input type="range" name="left" id="leftChannel" step="1" min="20" max="300">
 
       <label for="rightChannel" id="rightLabel">Right Channel: </label>
-      <input type="range" name="right" id="rightChannel" step="1" min="20" max="200">
+      <input type="range" name="right" id="rightChannel" step="1" min="20" max="300">
 
     </div>
     <button class="btn">Play</button>
+    <button class="cog">
+      <!-- <img src="assets/settings.svg" alt="cog"> -->
+    </button>
 
+  </div>
+  <div class="settings">
+    <h2>-Settings-</h2>
+    <div class="presets">
+      <h3 class="freq-pres">Frequency and Waveform Presets</h3>
+      <button class="btn-presets preset preset-1">Theta 6Hz</button>
+      <button class="btn-presets preset preset-2">Darkness</button>
+      <button class="btn-presets preset preset-3">Ufo</button>
+      <button class="btn-presets preset preset-4">Dark Buzz<br><small>Dangerous</small></button>
+      <button class="btn-presets preset preset-5">Add Noise</button>
+      <button class="btn-presets preset waveform-switch">Sine</button>
+
+    </div>
+    <button class="settings-close"></button>
   </div>
 
   <script src="main.js"></script>
